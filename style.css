@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color:black;
+    background-color:cornflowerblue;
     color:white;
     display: flex;
     flex-direction:column;
@@ -20,11 +20,15 @@ body{
 }
 
 .movie-container select{
-    background-color:brown;
+    background-color:white;
     border:0;
     border-radius:5px;
+    font-size:14px;
     margin-left:10px;
-    padding:5px 15px 5px 15px;;
+    padding:5px 15px 5px 15px;
+    appearance: none;
+    --moz-appearance:none;
+    -webkit-appearance:none;
 }
 
 .container{
@@ -33,7 +37,7 @@ body{
 }
 
 .seat{
-    background-color:grey;
+    background-color:#444451;
     height:12px;
     width:15px;
     margin:3px;
@@ -42,7 +46,7 @@ body{
     
 }
 .seat.selected{
-    background-color:blue;
+    background-color:#6feaf6;
 
 }
 .seat.occupied{
@@ -72,8 +76,10 @@ body{
    border-radius:5px;
     padding:5px 10px;
     background: rgba(0,0,0,0.1);
-    color:#777;
+    color:white;
     list-style-type:none;
+    display:flex;
+    justify-content: space-between;
     
     
     
@@ -98,16 +104,14 @@ body{
     height:70px;
     width:100%;
     margin:15px 0;
-    transform:rotte(-45deg);
-    box-shadow:0 px 10px rgba(255,255,255,0.7);
+    transform:rotateX(-45deg);
+    box-shadow:0px 10px rgba(255,255,255,0.7);
 }
 
-p{
-    display:block;
-}
+
 p.text{
     margin:5px 0;
 }
 p.text span{
-    color:darkgoldenrod;
+    color:#6feaf6;
 }
